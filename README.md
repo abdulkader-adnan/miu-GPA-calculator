@@ -1,10 +1,33 @@
 # miu-GPA-calculator
-Here is a description for your GitHub repository based on the files provided:
+🎓 MIU GPA Calculator
+A console-based C++ application designed for Misr International University (MIU) Computer Science students to calculate and manage their GPA.
 
-MIU GPA Calculator
+✨ Features
+This project provides a simple interface with two primary roles:
 
-This C++ project is a GPA calculator developed for MIU Computer Science students. It provides a console-based interface with two main roles:
-Admin Feature: Allows administrators to enter and save student scores.
-Student Feature: Allows students to view their full academic transcript and calculate both semester and cumulative GPA.
+🧑‍💻 Admin Role
+Enter Scores: Allows administrators to enter and save new scores for students by semester.
 
-The program is built using C++ with classes for Course, Semester, and Student to manage academic data. It loads course information and student scores from text files (courses.txt and students.txt) and saves updated scores back to the files.
+Data Persistence: Saves all new scores to the students.txt file.
+
+🧑‍🎓 Student Role
+View Transcript: Displays a full academic transcript, including courses, scores, letter grades, and grade points.
+
+Calculate GPA: Computes both semester and cumulative GPA based on the scores entered.
+
+🛠️ Technical Details
+Language: C++
+
+Core Structure: Built using object-oriented principles. The main classes are:
+
+Course: Manages course name, credit hours, score, and grade points.
+
+Semester: Holds an array of Course objects for a specific semester.
+
+Student: Manages student ID and an array of Semester objects.
+
+Data Handling: The program reads and writes data from local text files:
+
+courses.txt: Stores the university's course catalog (course name, credit hours).
+
+students.txt: Stores student IDs and their corresponding scores for each course.
