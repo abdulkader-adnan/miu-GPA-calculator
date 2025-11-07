@@ -1,33 +1,25 @@
-# miu-GPA-calculator
-🎓 MIU GPA Calculator
-A console-based C++ application designed for Misr International University (MIU) Computer Science students to calculate and manage their GPA.
+# MIU GPA Calculator
 
-✨ Features
-This project provides a simple interface with two primary roles:
+This C++ project is a GPA calculator developed for MIU Computer Science students.  
+It provides a console-based interface with two main roles:
 
-🧑‍💻 Admin Role
-Enter Scores: Allows administrators to enter and save new scores for students by semester.
+## Admin Feature
+- Allows administrators to enter and save student scores.
 
-Data Persistence: Saves all new scores to the students.txt file.
+## Student Feature
+- Allows students to view their full academic transcript.
+- Calculates both semester and cumulative GPA.
 
-🧑‍🎓 Student Role
-View Transcript: Displays a full academic transcript, including courses, scores, letter grades, and grade points.
+---
 
-Calculate GPA: Computes both semester and cumulative GPA based on the scores entered.
+### Technical Details
+The program is built using C++ with classes for:
+- **Course** – manages course information such as code, name, credits, and grade.
+- **Semester** – stores and manages multiple courses per semester.
+- **Student** – represents a student with their semesters and GPA data.
 
-🛠️ Technical Details
-Language: C++
+The application reads and writes data from text files:
+- `courses.txt` – stores course information.
+- `students.txt` – stores student records and grades.
 
-Core Structure: Built using object-oriented principles. The main classes are:
-
-Course: Manages course name, credit hours, score, and grade points.
-
-Semester: Holds an array of Course objects for a specific semester.
-
-Student: Manages student ID and an array of Semester objects.
-
-Data Handling: The program reads and writes data from local text files:
-
-courses.txt: Stores the university's course catalog (course name, credit hours).
-
-students.txt: Stores student IDs and their corresponding scores for each course.
+All changes made by the admin are saved back to the respective files for future use.
